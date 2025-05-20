@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# Painel Financeiro Pessoal 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-10.1.0-orange?logo=firebase)](https://firebase.google.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+Um dashboard financeiro completo para gestão pessoal com autenticação segura, visualizações interativas e integração em tempo real com o Firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Funcionalidades Principais
 
-## Expanding the ESLint configuration
+### 📊 Visão Geral Financeira
+- **Saldo Atualizado**: Receitas vs. Despesas em tempo real
+- **Gráficos Interativos**:
+  - Pizza de distribuição de gastos
+  - Comparativo mensal de despesas
+- **Filtro Temporal**: Análise por mês/ano (últimos 6 meses)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 💳 Gestão de Cartões
+- Registro de faturas por banco
+- Comparativo com meses anteriores
+- Alertas de aumento de gastos
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 📅 Despesas Programadas
+- Categorização inteligente (aluguel, contas, etc.)
+- Sistema de lembretes integrado
+- Edição rápida diretamente na tabela
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 💰 Gestão de Renda
+- Registro de múltiplas fontes de renda
+- Histórico completo de entradas
+- Previsão de saldo futuro
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠 Tecnologias Utilizadas
+| Tecnologia           | Função                                |
+|----------------------|---------------------------------------|
+| React + TypeScript   | Interface dinâmica e tipagem segura   |
+| Firebase Auth        | Autenticação segura de usuários       |
+| Firestore            | Banco de dados em tempo real          |
+| date-fns             | Manipulação avançada de datas         |
+| React Charts         | Visualizações de dados interativas    |
+| Tailwind CSS         | Estilização ágil e responsiva         |
+
+
+
